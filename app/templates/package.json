@@ -1,0 +1,35 @@
+{
+	"name": "electric-pill",
+	"devDependencies": {
+		"apache-server-configs": "latest",
+		"grunt": "latest",
+		"grunt-autoprefixer": "latest",
+		"grunt-browser-sync": "latest",
+		"grunt-concurrent": "latest",
+		"grunt-contrib-clean": "latest",
+		"grunt-contrib-compress": "latest",
+		"grunt-contrib-concat": "latest",
+		"grunt-contrib-copy": "latest",
+		"grunt-contrib-cssmin": "latest",
+		"grunt-contrib-htmlmin": "latest",
+		"grunt-contrib-imagemin": "latest",
+		"grunt-contrib-jshint": "latest",
+		"grunt-contrib-requirejs": "latest",
+		"grunt-contrib-sass": "latest",
+		"grunt-contrib-uglify": "latest",
+		"grunt-contrib-watch": "latest",
+		"grunt-inline-imgsize": "latest",
+		"grunt-newer": "latest",
+		"grunt-processhtml": "latest",
+		"grunt-remove-logging": "latest",
+		"grunt-rev": "latest",
+		"grunt-svgmin": "latest",
+		"grunt-tinypng": "latest",
+		"jshint-stylish": "latest",
+		"load-grunt-tasks": "latest",
+		"time-grunt": "latest"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	}
+}

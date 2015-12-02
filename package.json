@@ -1,0 +1,37 @@
+{
+  "name": "generator-refr3sh-web",
+  "version": "0.0.0",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "7daysofrain/generator-refr3sh-web",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/7daysofrain"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^0.5.0",
+    "svn-interface": "^0.4.6",
+    "yeoman-generator": "^0.18.0",
+    "yosay": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}
