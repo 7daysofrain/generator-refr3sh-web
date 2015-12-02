@@ -1,7 +1,7 @@
 {
   "name": "generator-refr3sh-web",
-  "version": "0.0.0",
-  "description": "Web basic generator for Refr3sh",
+  "version": "1.0.0",
+  "description": "Web basic generator for Refr3sh projects",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "7daysofrain/generator-refr3sh-web",
