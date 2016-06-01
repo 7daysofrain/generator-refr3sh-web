@@ -1,0 +1,19 @@
+$default-font-size: 16;
+
+@mixin text-regular($size){
+	font-family: Verdana, sans-serif;
+	@if $size > 0 { font-size: em($size) }
+}
+@mixin text-title($size){
+	font-family: 'Times', serif;
+	font-weight: 500;
+	@if $size > 0 { font-size: em($size) }
+}
+
+@function em($pixels, $context: $default-font-size) {
+	@return #{$pixels/$context}rem;
+}
+
+.title1{
+	@include text-title(36);
+}

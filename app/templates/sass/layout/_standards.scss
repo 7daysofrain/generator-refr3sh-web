@@ -25,6 +25,8 @@
 	float: right;
 }
 
-body{
+$main-font-size: 14;
 
+body{
+	@include text-regular($main-font-size);
 }

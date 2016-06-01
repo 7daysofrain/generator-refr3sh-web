@@ -17,7 +17,7 @@ require.config({
 });
 var app;
 
-require(["app/app"], function (application) {
+require(["jQuery","app/app"], function (j,application) {
 	window.app = app = application;
 	app.init();
 });

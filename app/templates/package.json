@@ -15,7 +15,7 @@
 		"grunt-contrib-imagemin": "latest",
 		"grunt-contrib-jshint": "latest",
 		"grunt-contrib-requirejs": "latest",
-		"grunt-contrib-sass": "latest",
+		"grunt-sass": "latest",
 		"grunt-contrib-uglify": "latest",
 		"grunt-contrib-watch": "latest",
 		"grunt-inline-imgsize": "latest",
@@ -26,7 +26,7 @@
 		"grunt-svgmin": "latest",
 		"grunt-tinypng": "latest",
 		"jshint-stylish": "latest",
-		"load-grunt-tasks": "latest",
+		"jit-grunt": "latest",
 		"time-grunt": "latest"
 	},
 	"engines": {

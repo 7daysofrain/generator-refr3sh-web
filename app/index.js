@@ -243,8 +243,12 @@ module.exports = yeoman.generators.Base.extend({
 				props
 			);
 			this.fs.copy(
-					this.templatePath("src/content/script/app/app.js"),
-					this.destinationPath("src/content/script/app/app.js")
+				this.templatePath("src/content/script/app/app.js"),
+				this.destinationPath("src/content/script/app/app.js")
+			);
+			this.fs.copy(
+				this.templatePath("src/content/script/app/initializer.js"),
+				this.destinationPath("src/content/script/app/initializer.js")
 			);
 
 			// Setup Grunt
@@ -266,7 +270,8 @@ module.exports = yeoman.generators.Base.extend({
 			dependencies: {}
 		};
 		bower.dependencies.jquery = "latest";
-		bower.dependencies.requirejs = "https://github.com/jrburke/requirejs.git";
+		bower.dependencies.requirejs = "latest";
+		bower.dependencies.refr3shjslib = "https://github.com/7daysofrain/refr3sh-jslib.git";
 
 		if (props.includeModernizr) {
 			bower.dependencies.modernizr = "latest";
@@ -304,10 +309,9 @@ module.exports = yeoman.generators.Base.extend({
 			spawn('svn', ['commit']);
 		}
 
-		//this.bowerInstall();
+		this.bowerInstall();
 		if(!this.options.folders) {
 			//this.installDependencies();
-			this.spawnCommand('bower', ['link','refr3sh-jslib']);
 		}
 	}
 });
