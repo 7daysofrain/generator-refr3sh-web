@@ -186,8 +186,8 @@ module.exports = yeoman.generators.Base.extend({
 							}
 					);
 					this.fs.copyTpl(
-							this.templatePath("sass/base/_fonts.scss"),
-							this.destinationPath("src/content/styles/_fonts.scss"),
+							this.templatePath("sass/base/_text.scss"),
+							this.destinationPath("src/content/styles/_text.scss"),
 							{}
 					);
 					this.fs.copyTpl(
