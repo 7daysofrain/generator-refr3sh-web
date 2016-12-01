@@ -1,6 +1,6 @@
 {
   "name": "generator-refr3sh-web",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Web basic generator for Refr3sh projects",
   "license": "MIT",
   "main": "app/index.js",
