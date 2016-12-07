@@ -40,6 +40,9 @@ module.exports = function (grunt) {
 			sass: {
 				files: '<%= config.app %>/content/styles/{,*/}*.scss',
 				tasks: ['sass:dev']
+			},
+			options: {
+				debounceDelay: 250,
 			}
 		},
 		browserSync: {
