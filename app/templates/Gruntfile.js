@@ -9,6 +9,9 @@ module.exports = function (grunt) {
 	// Load grunt tasks automatically
 	require('jit-grunt')(grunt);
 
+
+	grunt.loadNpmTasks('grunt-inline-imgsize');
+
 	// Configurable paths
 	var config = {
 		app: './src',
@@ -188,8 +191,8 @@ module.exports = function (grunt) {
 		sass: {
 			dist: {
 				options: {
-					style: 'compressed',
-					sourcemap: 'none'
+					outputStyle: 'compressed',
+					sourceMap: true
 				},
 				files: {
 					'<%= config.dist %>/content/styles/global.css': '<%= config.app %>/content/styles/main.scss'
@@ -197,8 +200,8 @@ module.exports = function (grunt) {
 			},
 			dev: {
 				options: {
-					style: 'nested',
-					sourcemap: 'auto'
+					outputStyle: 'nested',
+					sourceMap: false
 				},
 				files: {
 					'<%= config.app %>/content/styles/global.css': '<%= config.app %>/content/styles/main.scss'
@@ -258,8 +261,7 @@ module.exports = function (grunt) {
 							'core/**',
 							'json/**',
 							'bin/*.*',
-							'Views/**',
-							'../ree-navidad-2015.sql'
+							'Views/**'
 						]
 					}/*,
 					 {
@@ -316,7 +318,7 @@ module.exports = function (grunt) {
 			}
 		},
 		inlineImgSize: {
-			inlineImgSize: {
+			dist: {
 				files: {
 					src: ['<%= config.dist %>/index.html']
 				}
